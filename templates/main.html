@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title> Страница пользователя {{request.user.username}}</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="http://127.0.0.1:8000/news/">NewsPortal</a></h1>
+            <h1><a href="/">SignUp/SignIn</a></h1>
+            <h3><a href="http://127.0.0.1:8000/admin">Admin panel</a></h3>
+            (шаблон templates\main.html)
+<hr>
+        </div>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
